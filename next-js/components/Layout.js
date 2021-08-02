@@ -1,15 +1,16 @@
 import Nav from './Nav'
+import HeadInfo from './HeadInfo'
 
 const Layout = ({children}) => {
-    return (
-        <>
+   return (
+      <>
+         <HeadInfo />
+         <Nav />
+         <div>
+            {children}
+         </div>
+      </>
+   )
+};
 
-            <Nav />
-            <div>
-                {children}
-            </div>
-        </>
-    )        
-}
-
-export default Layout
+export default Layout;

@@ -1,18 +1,19 @@
 import Head from 'next/head'
 
-const HeadInfo = ({title, keyword, contents}) => {
-    return (
-        <Head>
-            <title>{title}</title>
-            <meta keyword={keyword} />
-            <meta contents={contents} />
-        </Head>
-    )            
+const HeadInfo = ({ title, keyword, contents }) => {
+   return (
+      <Head>
+         <title>{title}</title>
+         <meta keyword={keyword}></meta>
+         <meta contents={contents}></meta>
+      </Head>
+   )
 }
 
-HeadInfo.defaultprops = {
-    title: 'My Blog',
-    keyword: 'Blog powered by Next js',
-    content: 'practice next js'
+HeadInfo.defaultProps ={
+   title: `My Blog`,
+   keyword: `Blog next js`,
+   contents: `Blog next js`
 }
-export default HeadInfo
+
+export default HeadInfo;
